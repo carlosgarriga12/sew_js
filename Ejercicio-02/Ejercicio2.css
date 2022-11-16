@@ -1,0 +1,15 @@
+/*Especificidad (0,0,1)*/
+body {
+    background-color: beige;
+    color:indigo;    
+}
+
+/*Especificidad (0,0,1)*/
+h1, h2 {
+    font-family: cursive;
+}
+
+/*Especificidad (0,0,1)*/
+p {
+    font-family: sans-serif;
+}

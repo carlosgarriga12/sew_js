@@ -1,0 +1,102 @@
+/*Especificidad: 001*/
+body {
+    color: black;
+    background-color: #bfbfbf;
+}
+
+/*Especificidad: 001*/
+h1 {
+    text-align: center;
+}
+
+/*Especificidad: 001*/
+form {
+    color: white;
+    background-color: #28312f;
+
+    width: max-content;
+
+    border-radius: 4%;
+
+    padding: 1.2em;
+    margin: auto;
+
+    display: grid;
+    grid-template-rows: repeat(8, 1.5em);
+    grid-template-columns: repeat(5, 2.5em);
+    gap: 1em;
+}
+
+/*Especificidad: 011*/
+input[type=button] {
+    color: black;
+    background-color: #dddddd;
+    
+    border: none;
+    border-radius: 1%;
+
+}
+
+/*Especificidad: 021*/
+input[type=button]:active {
+    box-shadow:black;
+}
+
+/*Especificidad: 011*/
+input[value="mrc"],
+input[value="m+"],
+input[value="m-"]
+{
+    color: white;
+    background-color: #6f6f6f;
+}
+
+/*Especificidad: 011*/
+input[value="X"],
+input[value="/"],
+input[value="-"],
+input[value="+"],
+input[value="M-"],
+input[value="M+"],
+input[value="MRC"],
+input[value="C"],
+input[value="CE"],
+input[value="+/-"],
+input[value="raiz"],
+input[value="%"]
+{
+    color: white;
+    background-color: #2e9763;
+}
+
+input[value="C"],
+input[value="CE"],
+input[value="+/-"],
+input[value="raiz"],
+input[value="%"]
+{
+    border-radius: 50%;
+}
+
+input[value="+"] {
+    grid-row-end: span 2;
+}
+
+/*Especificidad: 011*/
+input[type=text] {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+
+    color: black;
+    background-color: #8d9972;
+
+    text-align: right;
+    text-overflow: ellipsis;
+
+    grid-column-end: span 5;
+    grid-row-end: span 2;
+}
+
+label {
+    text-align: left;
+}
