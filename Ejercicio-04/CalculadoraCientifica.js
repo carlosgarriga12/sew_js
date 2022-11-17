@@ -331,5 +331,6 @@ class CalculadoraCientifica extends CalculadoraMilan {
 
     }
 
-    
 }
+
+let calculadora = new CalculadoraCientifica();
