@@ -8,6 +8,31 @@ class CalculadoraMilan{
         this.op1 = "";
         this.op2 = "";
         this.igualPulsado = false;
+
+        document.addEventListener('keydown', (event) => {
+            const key = event.key;
+            
+            if (key !== ' ') { 
+                if (Number.isInteger(Number(key)))
+                    this.digitos(key);
+                else {
+                    if (key === '.')
+                        this.punto();
+                    else if (key === '+')
+                        this.suma();
+                    else if (key === '-')
+                        this.resta();
+                    else if (key === '*')
+                        this.multiplicacion();
+                    else if (key === '/')
+                        this.division();
+                    else if (key.toUpperCase() === 'C')
+                        this.borrar();
+                    else if (key === 'Enter')
+                        this.calcular();
+                }
+            }
+        });
     }   
 
     digitos(digito){
@@ -127,16 +152,21 @@ class CalculadoraMilan{
                     this.op1 = new Number(this.op1);
                 }
                 this.memoria = this.op1;
-                document.querySelector('body > form > input[type=text]:nth-child(2)').value = "M " + this.op1;
+                document.querySelector('input[type=text]').value = "M " + this.op1;
                 this.op1 = "";
             }
         } else {
             if (this.op2.length != 0) {
-                let result = eval(this.op1 + this.operandos[0] + this.o2);
-                this.memoria = result;
-                document.querySelector('body > form > input[type=text]:nth-child(2)').value = "M " + result;
+                if (this.igualPulsado) {
+                    document.querySelector('input[type=text]').value = "M " + this.memoria;
+                } else {
+                    let result = eval(this.op1 + this.operandos[0] + this.op2);
+                    this.memoria = result;
+                    document.querySelector('input[type=text]').value = "M " + result;
+                }
                 this.op1 = "";
                 this.op2 = "";
+                this.operandos = new Array();
             }
         }
     }
@@ -148,16 +178,17 @@ class CalculadoraMilan{
                     this.op1 = new Number(this.op1);
                 }
                 this.memoria = this.memoria - this.op1;
-                document.querySelector('body > form > input[type=text]:nth-child(2)').value = "M " + this.op1;
+                document.querySelector('input[type=text]').value = "M " + this.op1;
                 this.op1 = "";
             }
         } else {
             if (this.op2.length != 0) {
-                let result = eval(this.op1 + this.operandos[0] + this.o2);
+                let result = eval(this.op1 + this.operandos[0] + this.op2);
                 this.memoria = this.memoria - result;
-                document.querySelector('body > form > input[type=text]:nth-child(2)').value = "M " + result;
+                document.querySelector('input[type=text]').value = "M " + this.memoria;
                 this.op1 = "";
                 this.op2 = "";
+                this.operandos = new Array();
             }
         }
     }
@@ -169,16 +200,17 @@ class CalculadoraMilan{
                     this.op1 = new Number(this.op1);
                 }
                 this.memoria = this.memoria + this.op1;
-                document.querySelector('body > form > input[type=text]:nth-child(2)').value = "M " + this.op1;
+                document.querySelector('input[type=text]').value = "M " + this.op1;
                 this.op1 = "";
             }
         } else {
             if (this.op2.length != 0) {
-                let result = eval(this.op1 + this.operandos[0] + this.o2);
+                let result = eval(this.op1 + this.operandos[0] + this.op2);
                 this.memoria = this.memoria + result;
-                document.querySelector('body > form > input[type=text]:nth-child(2)').value = "M " + result;
+                document.querySelector('input[type=text]').value = "M " + this.memoria;
                 this.op1 = "";
                 this.op2 = "";
+                this.operandos = new Array();
             }
         }
     }
@@ -202,6 +234,7 @@ class CalculadoraMilan{
                 }
                 this.op1 = result;
                 this.pantalla = result;
+                this.actualizaPantalla();
             } else {
                 this.op1 = "0";
                 this.pantalla = this.op1;
@@ -240,15 +273,35 @@ class CalculadoraMilan{
     }
 
     calcular () {
-        let result = eval(this.op1 + this.operandos[0] + this.op2);
-        this.pantalla = result;
-        this.actualizaPantalla();
-        this.op1 = result;
-        this.igualPulsado = true;
+        let result;
+        if ((this.operandos[0] == '*' || this.operandos[0] ==  '/') 
+            && this.op2.length == 0) {
+            this.op2 = 1;
+            result = eval(this.op1 + this.operandos[0] + this.op2);
+            this.op2 = result;
+            this.operandoPulsado = false;
+        } else {
+            try  {
+                result = eval(this.op1 + this.operandos[0] + this.op2);
+                if (result == Infinity) {
+                    throw err;
+                }
+            } catch (err) {
+                this.borrar();
+                this.pantalla = 'MATH ERROR';
+                this.actualizaPantalla();
+                return;
+            }
+            
+            this.pantalla = result;
+            this.actualizaPantalla();
+            this.op1 = result;
+            this.igualPulsado = true;
+        }
     }
 
     actualizaPantalla() {
-       document.querySelector('body > form > input[type=text]:nth-child(2)').value = this.pantalla;
+       document.querySelector('input[type=text]').value = this.pantalla;
     }
 
     ce() {
@@ -257,7 +310,7 @@ class CalculadoraMilan{
         } else {
             this.op1 = '';
         }
-        document.querySelector('body > form > input[type=text]:nth-child(2)').value = '0';
+        document.querySelector('input[type=text]').value = '0';
     }
 
     borrar(){

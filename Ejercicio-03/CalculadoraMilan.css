@@ -37,11 +37,6 @@ input[type=button] {
 
 }
 
-/*Especificidad: 021*/
-input[type=button]:active {
-    box-shadow:black;
-}
-
 /*Especificidad: 011*/
 input[value="mrc"],
 input[value="m+"],
