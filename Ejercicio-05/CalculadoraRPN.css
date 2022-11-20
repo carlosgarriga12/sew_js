@@ -20,7 +20,7 @@ main {
 
 form {
     display: grid;
-    grid-template-rows: repeat(10, 2.5em);
+    grid-template-rows: repeat(11, 2.5em);
     grid-template-columns: repeat(4, auto);
 }
 
@@ -55,5 +55,6 @@ input[value="."] {
 
 textarea {
     resize: none;
+    grid-row-end: span 2;
 }
 

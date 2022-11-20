@@ -12,7 +12,7 @@
     <h1>Calculadora RPN</h1>
     
     <main>
-        <form>
+        <form onsubmit="return false">
             <label for="pila">Pila</label>
             <textarea id="pila" cols="50" rows="5" disabled></textarea>
             <label for="dato">Dato</label>
@@ -21,7 +21,7 @@
             <input type ="button" value = "&#8730;" onclick="calculadora.raiz()">
             <input type ="button" value = "X^2" onclick="calculadora.cuadrado()" >
             <input type ="button" value = "log" onclick="calculadora.logaritmo()">
-            <input type ="button" value = "n!" onclick="calculadora.factorial()">
+            <input type ="button" value = "C" onclick="calculadora.limpiar()">
     
             <input type ="button" value = "&#8593;" onclick="calculadora.cambiarFuncionesTrigonometricas()">
             <input type ="button" value = "sin" onclick="calculadora.seno()" >
@@ -38,7 +38,6 @@
             <input type ="button" value = "6" onclick="calculadora.digitos('6')">
             <input type ="button" value = "X" onclick="calculadora.multiplicacion()">
     
-    
             <input type ="button" value = "1" onclick="calculadora.digitos('1')">
             <input type ="button" value = "2" onclick="calculadora.digitos('2')">
             <input type ="button" value = "3" onclick="calculadora.digitos('3')">
@@ -46,7 +45,7 @@
     
             <input type ="button" value = "0" onclick="calculadora.digitos('0')">
             <input type ="button" value = "." onclick="calculadora.punto()">
-            <input type ="button" value = "Enter" onclick="calculadora.push();">
+            <input type ="submit" value = "Enter" onclick="calculadora.push();">
             <input type ="button" value = "+" onclick="calculadora.suma();">
         </form>
      

@@ -99,21 +99,11 @@ class CalculadoraRPN {
         }
     }
 
-    factorial() {
-        if(this.pila.len() >= 1) {
-            let op = this.pila.pop();
-            let result = this.factorialDe(op);
-            this.pila.push(result);
-            this.actualizarPantalla();
-        }
-    }
-
-    factorialDe(n) {
-        if (n == 0) {
-            return 1;
-        } else {
-            return n  * this.factorialDe(n - 1)
-        }
+    limpiar() {
+        this.pila = new Pila();
+        this.dato = '';
+        this.actualizarPantalla();
+        this.actualizarDato();
     }
 
     seno() {
@@ -179,11 +169,11 @@ class CalculadoraRPN {
         for(let i = 0; i < this.pila.len(); i++) {
             result += this.pila.get(i).toString() + "\n";
         }
-        document.querySelector("body > main > article > label > textarea").value = result;
+        document.querySelector("#pila").value = result;
     }
 
     actualizarDato() {
-        document.querySelector("body > main > article > label:nth-child(2) > input[type=text]").value = this.dato;
+        document.querySelector("#dato").value = this.dato;
     }
 
     cambiarFuncionesTrigonometricas() {
