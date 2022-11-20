@@ -158,17 +158,17 @@ class CalculadoraMilan{
                     this.op1 = new Number(this.op1);
                 }
                 this.memoria = this.op1;
-                document.querySelector('input[type=text]').value = "M " + this.op1;
+                document.querySelector("#resultado").value = "M " + this.op1;
                 this.op1 = "";
             }
         } else {
             if (this.op2.length != 0) {
                 if (this.igualPulsado) {
-                    document.querySelector('input[type=text]').value = "M " + this.memoria;
+                    document.querySelector("#resultado").value = "M " + this.memoria;
                 } else {
                     let result = eval(this.op1 + this.operandos[0] + this.op2);
                     this.memoria = result;
-                    document.querySelector('input[type=text]').value = "M " + result;
+                    document.querySelector("#resultado").value = "M " + result;
                 }
                 this.op1 = "";
                 this.op2 = "";
@@ -184,14 +184,14 @@ class CalculadoraMilan{
                     this.op1 = new Number(this.op1);
                 }
                 this.memoria = this.memoria - this.op1;
-                document.querySelector('input[type=text]').value = "M " + this.op1;
+                document.querySelector("#resultado").value = "M " + this.op1;
                 this.op1 = "";
             }
         } else {
             if (this.op2.length != 0) {
                 let result = eval(this.op1 + this.operandos[0] + this.op2);
                 this.memoria = this.memoria - result;
-                document.querySelector('input[type=text]').value = "M " + this.memoria;
+                document.querySelector("#resultado").value = "M " + this.memoria;
                 this.op1 = "";
                 this.op2 = "";
                 this.operandos = new Array();
@@ -206,14 +206,14 @@ class CalculadoraMilan{
                     this.op1 = new Number(this.op1);
                 }
                 this.memoria = this.memoria + this.op1;
-                document.querySelector('input[type=text]').value = "M " + this.op1;
+                document.querySelector("#resultado").value = "M " + this.op1;
                 this.op1 = "";
             }
         } else {
             if (this.op2.length != 0) {
                 let result = eval(this.op1 + this.operandos[0] + this.op2);
                 this.memoria = this.memoria + result;
-                document.querySelector('input[type=text]').value = "M " + this.memoria;
+                document.querySelector("#resultado").value = "M " + this.memoria;
                 this.op1 = "";
                 this.op2 = "";
                 this.operandos = new Array();
@@ -314,7 +314,7 @@ class CalculadoraMilan{
     }
 
     actualizaPantalla() {
-       document.querySelector('input[type=text]').value = this.pantalla;
+        document.querySelector("#resultado").value = this.pantalla;
     }
 
     ce() {
@@ -323,7 +323,7 @@ class CalculadoraMilan{
         } else {
             this.op1 = '';
         }
-        document.querySelector('input[type=text]').value = '0';
+        document.querySelector("#resultado").value = '0';
     }
 
     borrar(){
@@ -548,34 +548,34 @@ class CalculadoraCientifica extends CalculadoraMilan {
 
     cambiarFuncionesTrigonometricas() {
         if (!this.arc) {
-            document.querySelector("body > main > section > input[type=button]:nth-child(3)").value = 'arcsen';
-            document.querySelector("body > main > section > input[type=button]:nth-child(4)").value = 'arccos';
-            document.querySelector("body > main > section > input[type=button]:nth-child(5)").value = 'arctan';
+            document.querySelector("body > form > input[type=button]:nth-child(13)").value = 'arcsen';
+            document.querySelector("body > form > input[type=button]:nth-child(14)").value = 'arccos';
+            document.querySelector("body > form > input[type=button]:nth-child(15)").value = 'arctan';
             this.arc = true;
         } else {
-            document.querySelector("body > main > section > input[type=button]:nth-child(3)").value = 'sen';
-            document.querySelector("body > main > section > input[type=button]:nth-child(4)").value = 'cos';
-            document.querySelector("body > main > section > input[type=button]:nth-child(5)").value = 'tan';
+            document.querySelector("body > form > input[type=button]:nth-child(13)").value = 'sen';
+            document.querySelector("body > form > input[type=button]:nth-child(14)").value = 'cos';
+            document.querySelector("body > form > input[type=button]:nth-child(15)").value = 'tan';
             this.arc = false;
         }
     }
 
     cambiarFuncionesHiperbolicas() {
         if (!this.hyperbolicFunctions) {
-            document.querySelector("body > main > section > input[type=button]:nth-child(3)").value += 'h';
-            document.querySelector("body > main > section > input[type=button]:nth-child(4)").value += 'h';
-            document.querySelector("body > main > section > input[type=button]:nth-child(5)").value += 'h';
+            document.querySelector("body > form > input[type=button]:nth-child(13)").value += 'h';
+            document.querySelector("body > form > input[type=button]:nth-child(14)").value += 'h';
+            document.querySelector("body > form > input[type=button]:nth-child(15)").value += 'h';
             this.hyperbolicFunctions = true;
         } else {
-            document.querySelector("body > main > section > input[type=button]:nth-child(3)").value = 
-                document.querySelector("body > main > section > input[type=button]:nth-child(3)").value.substring(0, 
-                document.querySelector("body > main > section > input[type=button]:nth-child(3)").value.length - 1);
-            document.querySelector("body > main > section > input[type=button]:nth-child(4)").value = 
-                document.querySelector("body > main > section > input[type=button]:nth-child(4)").value.substring(0, 
-                document.querySelector("body > main > section > input[type=button]:nth-child(4)").value.length - 1);
-            document.querySelector("body > main > section > input[type=button]:nth-child(5)").value = 
-                document.querySelector("body > main > section > input[type=button]:nth-child(5)").value.substring(0, 
-                document.querySelector("body > main > section > input[type=button]:nth-child(5)").value.length - 1);
+            document.querySelector("body > form > input[type=button]:nth-child(13)").value = 
+            document.querySelector("body > form > input[type=button]:nth-child(13)").value.substring(0, 
+                document.querySelector("body > form > input[type=button]:nth-child(13)").value.length - 1);
+            document.querySelector("body > form > input[type=button]:nth-child(14)").value = 
+            document.querySelector("body > form > input[type=button]:nth-child(14)").value.substring(0, 
+                document.querySelector("body > form > input[type=button]:nth-child(14)").value.length - 1);
+            document.querySelector("body > form > input[type=button]:nth-child(15)").value = 
+            document.querySelector("body > form > input[type=button]:nth-child(15)").value.substring(0, 
+                document.querySelector("body > form > input[type=button]:nth-child(15)").value.length - 1);
             this.hyperbolicFunctions = false;
         }
     }
@@ -691,10 +691,10 @@ class CalculadoraCientifica extends CalculadoraMilan {
 
     cambiarUnidades() {
         if (this.grados) {
-            document.querySelector("body > main > article:nth-child(2) > input[type=button]:nth-child(1)").value = 'DEG'
+            document.querySelector("body > form > input[type=button]:nth-child(3)").value = 'DEG'
             this.grados = false;
         } else {
-            document.querySelector("body > main > article:nth-child(2) > input[type=button]:nth-child(1)").value = 'RAD'
+            document.querySelector("body > form > input[type=button]:nth-child(3)").value = 'RAD'
             this.grados = true;
         }
     }
