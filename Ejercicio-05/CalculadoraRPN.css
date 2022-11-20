@@ -2,6 +2,11 @@ body {
     background-color: rgb(226, 191, 148);
 }
 
+h1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 main {
     color: #acacac;
     background-color:rgb(0, 0, 0);
@@ -13,16 +18,10 @@ main {
     border-radius: 5%;
 }
 
-h1 {
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-section {
+form {
     display: grid;
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: repeat(4, 7em);
-
+    grid-template-rows: repeat(10, 2.5em);
+    grid-template-columns: repeat(4, auto);
 }
 
 article {
@@ -37,6 +36,7 @@ input[type="text"]{
     color:rgb(0, 0, 0);
     background-color: white;
     max-width: 100%;
+    grid-column-end: span 4;
 }
 
 input[value="1"],
@@ -52,3 +52,8 @@ input[value="0"],
 input[value="."] {
     font-weight: bold;
 }
+
+textarea {
+    resize: none;
+}
+
