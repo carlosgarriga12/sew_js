@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="author" content="Carlos Garriga Suárez" >
+    <meta name="viewport" content ="width=device-width, initial scale=1.0" >
+    <title>Ejercicio5 - Calculadora RPN</title>
+    <script src="CalculadoraRPN.js"></script>
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" >
+</head>
+<body>
+    <h1>Calculadora RPN</h1>
+    
+    <main>
+        <article>
+            <label for="pila">Pila<textarea id="pila" cols="50" rows="5" disabled></textarea></label>
+            <label for="dato">Dato<input type="text"></label>
+        </article>
+        
+        <section> 
+            <input type ="button" value = "&#8730;" onclick="calculadora.raiz()">
+            <input type ="button" value = "X^2" onclick="calculadora.cuadrado()" >
+            <input type ="button" value = "log" onclick="calculadora.logaritmo()">
+            <input type ="button" value = "n!" onclick="calculadora.factorial()">
+
+            <input type ="button" value = "&#8593;" onclick="calculadora.cambiarFuncionesTrigonometricas()">
+            <input type ="button" value = "sin" onclick="calculadora.seno()" >
+            <input type ="button" value = "cos" onclick="calculadora.coseno()" >
+            <input type ="button" value = "tan" onclick="calculadora.tangente()" >
+
+            <input type ="button" value = "7" onclick="calculadora.digitos('7')">
+            <input type ="button" value = "8" onclick="calculadora.digitos('8')">
+            <input type ="button" value = "9" onclick="calculadora.digitos('9')">
+            <input type ="button" value = "/" onclick="calculadora.division()">
+
+            <input type ="button" value = "4" onclick="calculadora.digitos('4')">
+            <input type ="button" value = "5" onclick="calculadora.digitos('5')">
+            <input type ="button" value = "6" onclick="calculadora.digitos('6')">
+            <input type ="button" value = "X" onclick="calculadora.multiplicacion()">
+
+
+            <input type ="button" value = "1" onclick="calculadora.digitos('1')">
+            <input type ="button" value = "2" onclick="calculadora.digitos('2')">
+            <input type ="button" value = "3" onclick="calculadora.digitos('3')">
+            <input type ="button" value = "-" onclick="calculadora.resta()">
+
+            <input type ="button" value = "0" onclick="calculadora.digitos('0')">
+            <input type ="button" value = "." onclick="calculadora.punto()">
+            <input type ="button" value = "Enter" onclick="calculadora.push();">
+            <input type ="button" value = "+" onclick="calculadora.suma();">
+            
+        </section>
+    </main>
+</body>
+</html>

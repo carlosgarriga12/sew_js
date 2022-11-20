@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(226, 191, 148);
+}
+
+main {
+    color: #acacac;
+    background-color:rgb(0, 0, 0);
+    width: max-content;
+
+    padding: 0.1em;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(4, 7em);
+
+}
+
+article {
+    color: white;
+    display: grid;
+    max-width: 25em;
+}
+
+textarea,
+input[type="text"]{
+    text-align: right;
+    color:rgb(0, 0, 0);
+    background-color: white;
+    max-width: 100%;
+}
+
+input[value="1"],
+input[value="2"],
+input[value="3"],
+input[value="4"],
+input[value="5"],
+input[value="6"],
+input[value="7"],
+input[value="8"],
+input[value="9"],
+input[value="0"],
+input[value="."] {
+    font-weight: bold;
+}
