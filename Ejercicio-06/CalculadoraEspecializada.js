@@ -169,11 +169,11 @@ class CalculadoraRPN {
         for(let i = 0; i < this.pila.len(); i++) {
             result += this.pila.get(i).toString() + "\n";
         }
-        document.querySelector("#pila").value = result;
+        document.getElementsByName("pila")[0].value = result;
     }
 
     actualizarDato() {
-        document.querySelector("#dato").value = this.dato;
+        document.getElementsByName("dato")[0].value = this.dato;
     }
 
     cambiarFuncionesTrigonometricas() {
@@ -428,7 +428,7 @@ class CalculadoraEspecializada extends CalculadoraRPN{
         for(let i = 0; i < this.pilaTexto.len(); i++) {
             result += this.pilaTexto.get(i).toString() + "\n";
         }
-        document.querySelector("#pila").value = result;
+        document.getElementsByName("pila")[0].value = result;
     }
 
     limpiar() {
