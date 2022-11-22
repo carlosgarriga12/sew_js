@@ -240,22 +240,42 @@ class CalculadoraEspecializada extends CalculadoraRPN{
         this.actualizarPantallaTexto();
     }
 
-    sin() {
-        this.pila.push(x => Math.sin(x))
-        this.pilaTexto.push('sen(x)');
-        this.actualizarPantallaTexto();
+    seno() {
+        if(this.funciones) {
+            this.pila.push(x => Math.sin(x))
+            this.pilaTexto.push('sen(x)');
+            this.actualizarPantallaTexto();
+        } else {
+            this.pila.push(x => Math.asin(x))
+            this.pilaTexto.push('arcsen(x)');
+            this.actualizarPantallaTexto();
+        }
     }
 
-    cos() {
-        this.pila.push(x => Math.cos(x))
-        this.pilaTexto.push('cos(x)');
-        this.actualizarPantallaTexto();
+    coseno() {
+        if(this.funciones){
+            this.pila.push(x => Math.cos(x))
+            this.pilaTexto.push('cos(x)');
+            this.actualizarPantallaTexto();
+        } else {
+            this.pila.push(x => Math.acos(x))
+            this.pilaTexto.push('arccos(x)');
+            this.actualizarPantallaTexto();
+        }
+        
     }
 
-    tan() {
-        this.pila.push(x => Math.tan(x))
-        this.pilaTexto.push('tan(x)');
-        this.actualizarPantallaTexto();
+    tangente() {
+        if(this.funciones) {
+            this.pila.push(x => Math.tan(x))
+            this.pilaTexto.push('tan(x)');
+            this.actualizarPantallaTexto();
+        } else {
+            this.pila.push(x => Math.atan(x))
+            this.pilaTexto.push('arctan(x)');
+            this.actualizarPantallaTexto();
+        }
+        
     }
 
     raiz() {
@@ -418,6 +438,20 @@ class CalculadoraEspecializada extends CalculadoraRPN{
         this.actualizarPantalla();
         this.actualizarDato();
         this.actualizarPantallaTexto();
+    }
+
+    cambiarFuncionesTrigonometricas() {
+        if (this.funciones) {
+            document.querySelector("body > main > form > input[type=button]:nth-child(14)").value = 'arcsen';
+            document.querySelector("body > main > form > input[type=button]:nth-child(15)").value = 'arccos';
+            document.querySelector("body > main > form > input[type=button]:nth-child(16)").value = 'arctan';
+            this.funciones = false;
+        } else {
+            document.querySelector("body > main > form > input[type=button]:nth-child(14)").value = 'sen';
+            document.querySelector("body > main > form > input[type=button]:nth-child(15)").value = 'cos';
+            document.querySelector("body > main > form > input[type=button]:nth-child(16)").value = 'tan';
+            this.funciones = true;
+        }
     }
 }
 
