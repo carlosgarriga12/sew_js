@@ -169,23 +169,23 @@ class CalculadoraRPN {
         for(let i = 0; i < this.pila.len(); i++) {
             result += this.pila.get(i).toString() + "\n";
         }
-        document.querySelector("#pila").value = result;
+        document.getElementsByName("pila")[0].value = result;
     }
 
     actualizarDato() {
-        document.querySelector("#dato").value = this.dato;
+        document.getElementsByName("dato")[0].value = this.dato;
     }
 
     cambiarFuncionesTrigonometricas() {
         if (this.funciones) {
-            document.querySelector("body > main > section > input[type=button]:nth-child(6)").value = 'arcsen';
-            document.querySelector("body > main > section > input[type=button]:nth-child(7)").value = 'arccos';
-            document.querySelector("body > main > section > input[type=button]:nth-child(8)").value = 'arctan';
+            document.querySelector("body > main > form > input[type=button]:nth-child(10)").value = 'arcsen';
+            document.querySelector("body > main > form > input[type=button]:nth-child(11)").value = 'arccos';
+            document.querySelector("body > main > form > input[type=button]:nth-child(12)").value = 'arctan';
             this.funciones = false;
         } else {
-            document.querySelector("body > main > section > input[type=button]:nth-child(6)").value = 'sen';
-            document.querySelector("body > main > section > input[type=button]:nth-child(7)").value = 'cos';
-            document.querySelector("body > main > section > input[type=button]:nth-child(8)").value = 'tan';
+            document.querySelector("body > main > form > input[type=button]:nth-child(10)").value = 'sen';
+            document.querySelector("body > main > form > input[type=button]:nth-child(11)").value = 'cos';
+            document.querySelector("body > main > form > input[type=button]:nth-child(12)").value = 'tan';
             this.funciones = true;
         }
     }
