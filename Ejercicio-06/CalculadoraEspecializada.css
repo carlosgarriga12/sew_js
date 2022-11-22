@@ -20,12 +20,6 @@ form {
     grid-template-columns: repeat(4, 6em);
 }
 
-article {
-    color: white;
-    display: grid;
-    max-width: 25em;
-}
-
 textarea,
 input[type="text"]{
     text-align: right;
