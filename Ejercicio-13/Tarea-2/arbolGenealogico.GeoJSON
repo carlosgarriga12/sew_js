@@ -1,0 +1,265 @@
+{
+    "type" : "FeatureCollection",
+    "features" : [
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -6.747125, 43.544425 ]
+            },
+            "properties" : {
+                "name" : "Nacimiento Carlos Garriga Suárez"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -5.849644, 43.355522 ]
+            },
+            "properties" : {
+                "name" : "Residencia Carlos Garriga Suárez"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -6.747125,43.544425 ]
+            },
+            "properties" : {
+                "name" : "Nacimiento Carla Acevedo Pérez"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -8.413133, 43.354024 ]
+            },
+            "properties" : {
+                "name" : "Residencia Carla Acevedo Pérez"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -6.747125,43.544425 ]
+            },
+            "properties" : {
+                "name" : "Nacimiento Silvia García Pertierra"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -5.864260873763004,43.35981086905457 ]
+            },
+            "properties" : {
+                "name" : "Residencia Silvia García Pertierra"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -6.747125,43.544425 ]
+            },
+            "properties" : {
+                "name" : "Nacimiento Rubén Pérez Pérez"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -8.413133,43.354024 ]
+            },
+            "properties" : {
+                "name" : "Residencia Rubén Pérez Pérez"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -6.747125,43.544425 ]
+            },
+            "properties" : {
+                "name" : "Nacimiento Roberto Fernández Pérez"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -5.777432,43.248858 ]
+            },
+            "properties" : {
+                "name" : "Residencia Roberto Fernández Pérez"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -6.648065659393047,43.56202167662689 ]
+            },
+            "properties" : {
+                "name" : "Nacimiento Álvaro Gión García"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -5.864260873763004,43.35981086905457 ]
+            },
+            "properties" : {
+                "name" : "Residencia Álvaro Gión García"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -6.721911,43.541180 ]
+            },
+            "properties" : {
+                "name" : "Nacimiento Gabriel Prieto Santos"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -6.721911, 43.541180 ]
+            },
+            "properties" : {
+                "name" : "Residencia Gabriel Prieto Santos"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -6.647999, 43.562858 ]
+            },
+            "properties" : {
+                "name" : "Nacimiento Raúl González García"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -6.647999,43.562858 ]
+            },
+            "properties" : {
+                "name" : "Residencia Raúl González García"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -6.649466,43.565398 ]
+            },
+            "properties" : {
+                "name" : "Nacimiento Jorge Prieto Pérez"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -5.8659370158925705, 43.363441633485856 ]
+            },
+            "properties" : {
+                "name" : "Residencia Jorge Prieto Pérez"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -5.8250277777778,43.375222222222 ]
+            },
+            "properties" : {
+                "name" : "Nacimiento Carmen Argüelles Villalba"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -5.852581,43.370233 ]
+            },
+            "properties" : {
+                "name" : "Residencia Carmen Argüelles Villalba"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -5.8250277777778,43.375222222222 ]
+            },
+            "properties" : {
+                "name" : "Nacimiento Lucía Menéndez García"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -5.825359,43.382412 ]
+            },
+            "properties" : {
+                "name" : "Residencia Lucía Menéndez García"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -5.8250277777778,43.375222222222 ]
+            },
+            "properties" : {
+                "name" : "Nacimiento Manuel Díaz Avello"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -5.858028,43.360052 ]
+            },
+            "properties" : {
+                "name" : "Residencia Manuel Díaz Avello"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -5.8250277777778,43.375222222222 ]
+            },
+            "properties" : {
+                "name" : "Nacimiento Adriana Argüelles Villalba"
+            }
+        },
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -5.866414961800099,43.361356553069825 ]
+            },
+            "properties" : {
+                "name" : "Residencia Adriana Argüelles Villalba"
+            }
+        }
+    ]
+}

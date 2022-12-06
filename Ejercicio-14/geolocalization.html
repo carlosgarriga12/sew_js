@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="author" content="Carlos Garriga Suárez" >
+    <meta name="viewport" content ="width=device-width, initial scale=1.0" >
+    <title>Ejercicio 14</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="geolocalization.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfPvwKFEh2NWOP7VjuHLpM6lhPsF45_mg"></script>
+    <link rel="stylesheet" type="text/css" href="geolocalization.css" >
+    
+</head>
+<body onload="m.inicializarMapa();">
+    <h1>Subir archivo JSON con el destino</h1>
+    <label for="file"> Selector de archivo GeoJSON</label>
+    <input type="file" onchange="m.inicializarMapa(this.files)" id="file" />
+    <main></main>
+</body>
+</html>

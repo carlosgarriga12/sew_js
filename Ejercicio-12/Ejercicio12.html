@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="author" content="Carlos Garriga Suárez" >
+    <meta name="viewport" content ="width=device-width, initial scale=1.0" >
+    <title>Ejercicio 12 - API HTML FILES</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio12.js"></script>
+    <link rel="stylesheet" type="text/css" href="Ejercicio12.css" >
+</head>
+<body>
+    <h1>Lector de archivos desde la máquina del cliente</h1>
+    <h2>Seleccione un archivo de texto, JSON o XML</h2>
+    <label for="file" hidden> Selector de archivo </label>
+    <input type="file" onchange="c.cargarArchivos(this.files)" id="file" />
+    <section></section>
+
+</body>
+</html>

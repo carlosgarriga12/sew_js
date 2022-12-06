@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <name>Red Social. Lugares de nacimiento y residencia</name>
+        <open>1</open>
+
+    <Placemark>
+<name>Lugar de nacimiento de Carlos Garriga Suárez</name>
+<Point>
+<coordinates>-6.747125,43.544425,81</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de residencia de Carlos Garriga Suárez</name>
+<Point>
+<coordinates>-5.849644,43.355522,236</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de nacimiento de Carla Acevedo Pérez</name>
+<Point>
+<coordinates>-6.747125,43.544425,81</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de residencia de Carla Acevedo Pérez</name>
+<Point>
+<coordinates>-8.413133,43.354024,79</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de nacimiento de Silvia García Pertierra</name>
+<Point>
+<coordinates>-6.747125,43.544425,42</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de residencia de Silvia García Pertierra</name>
+<Point>
+<coordinates>-5.864260873763004,43.35981086905457,247</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de nacimiento de Rubén Pérez Pérez</name>
+<Point>
+<coordinates>-6.747125,43.544425,73</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de residencia de Rubén Pérez Pérez</name>
+<Point>
+<coordinates>-8.413133,43.354024,79</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de nacimiento de Roberto Fernández Pérez</name>
+<Point>
+<coordinates>-6.747125,43.544425,70</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de residencia de Roberto Fernández Pérez</name>
+<Point>
+<coordinates>-5.777432,43.248858,210</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de nacimiento de Alvaro Gión García</name>
+<Point>
+<coordinates>-6.648065659393047,43.56202167662689,25</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de residencia de Alvaro Gión García</name>
+<Point>
+<coordinates>-5.864260873763004,43.35981086905457,247</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de nacimiento de Gabriel Prieto Santos</name>
+<Point>
+<coordinates>-6.721911,43.541180,6</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de residencia de Gabriel Prieto Santos</name>
+<Point>
+<coordinates>-6.721911,43.541180,6</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de nacimiento de Raúl González García</name>
+<Point>
+<coordinates>-6.647999,43.562858,16</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de residencia de Raúl González García</name>
+<Point>
+<coordinates>-6.647999,43.562858,16</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de nacimiento de Jorge Prieto Pérez</name>
+<Point>
+<coordinates>-6.649466,43.565398,33</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de residencia de Jorge Prieto Pérez</name>
+<Point>
+<coordinates>-5.8659370158925705,43.363441633485856,249</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de nacimiento de Carmen Argüelles Villalba</name>
+<Point>
+<coordinates>-5.8250277777778,43.375222222222,218</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de residencia de Carmen Argüelles Villalba</name>
+<Point>
+<coordinates>-5.852581,43.370233,274</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de nacimiento de Lucía Menéndez García</name>
+<Point>
+<coordinates>-5.8250277777778,43.375222222222,218</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de residencia de Lucía Menéndez García</name>
+<Point>
+<coordinates>-5.825359,43.382412,171</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de nacimiento de Manuel Díaz Avello</name>
+<Point>
+<coordinates>-5.8250277777778,43.375222222222,218</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de residencia de Manuel Díaz Avello</name>
+<Point>
+<coordinates>-5.858028,43.360052,267</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de nacimiento de Adriana Argüelles Villalba</name>
+<Point>
+<coordinates>-5.8250277777778,43.375222222222,218</coordinates>
+</Point>
+</Placemark>
+
+<Placemark>
+<name>Lugar de residencia de Adriana Argüelles Villalba</name>
+<Point>
+<coordinates>-5.866414961800099,43.361356553069825,250</coordinates>
+</Point>
+</Placemark>
+
+
+        </Document>
+    </kml>
+    

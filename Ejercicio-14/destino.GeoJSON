@@ -1,0 +1,15 @@
+{
+    "type" : "FeatureCollection",
+    "features" : [
+        {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [ -5.657739700170779, 43.529082422327505 ]
+            },
+            "properties" : {
+                "name" : "Nacimiento Carlos Garriga Suárez"
+            }
+        }
+    ]
+}
