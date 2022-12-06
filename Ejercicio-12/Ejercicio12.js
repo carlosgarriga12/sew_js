@@ -26,7 +26,7 @@ class CargadorDeArchivos{
             
         }
 
-        $('section').html(content);
+        $('main').html(content);
     }
 }
 
