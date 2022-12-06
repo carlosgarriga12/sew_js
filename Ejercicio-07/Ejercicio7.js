@@ -27,8 +27,12 @@ class Modificacion{
     }
 
     sumarFila() {
-        $('table').append('<tr><td>fila</td><td>fila</td><td>fila</td></tr>');
-        
+        var numberOfColumns = $('table tr:first').children().length;
+        let str = "";
+        for(let i = 0; i < numberOfColumns; i++) {
+            str += "<td>fila</td>";
+        }
+        $('table').append('<tr>' + str +'</tr>');
     }
 
     sumarColumna() {
